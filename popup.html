@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Title</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 10px;
+    }
+
+    input {
+      padding: 0.4rem 0.65rem;
+      border-radius: 0.5rem;
+    }
+
+    button {
+      background-color: #8074f4;
+      color: #111111;
+      padding: 0.5rem 0.8rem;
+      border: none;
+      border-radius: 0.5rem;
+      transition: all 0.5s;
+    }
+    button:not(:disabled):hover{
+      background-color: #190c8d;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+Enter values and submit to automatically Like and Comment
+<br><br>
+  <form>
+
+  <br><input id="like" placeholder="Like Count" type="number" >
+  <br>
+  <br><input id="comment" placeholder="Comment Count" type="text" >
+
+  <br>
+  <br><button id="submit" disabled="disabled">Submit</button>
+</form>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
